@@ -1,11 +1,12 @@
-// (function () {
-// 'use strict';
-
-// var typoJS = document.createElement('script');
-// typoJS.id = 'typoJS';
-// typoJS.src = 'https://cdn.rawgit.com/cirept/Typo.js/master/typo/typo.js';
-
-// document.head.appendChild(typoJS);
+/****************************************
+Author : Eric Tanaka
+----------------------------------------
+Description : Reads all text on webpage and checks if it is spelled correctly. Code uses a
+custom dictionary that the Digital Implementation team maintains.  This
+custom dictionary can have words added to it that are specific to the CDK business.
+----------------------------------------
+Update Log : Updated code with more comments - Eric Tanaka - 2-15-2018
+****************************************/
 
 /**
  * traverses the DOM and grabs all visible text
@@ -109,6 +110,7 @@ function addFlag() {
   jQuery('body')
     .prepend(myFlag);
 }
+
 /**
  *   Run spell check on the page by building the custom dictionary THEN
  *   running the spell check on the page once the dictionary has been built
@@ -145,14 +147,9 @@ function runSpellCheck() {
       addFlag();
 
       let matches = document.body.innerHTML.match(/(~~@\w+)@~~/g);
-      // console.log(matches);
-      // /(~~@\w+)@~~/g
     });
   });
 }
 
 // Run
-// window.onload = runSpellCheck();
 runSpellCheck();
-
-// })();

@@ -5,7 +5,7 @@
   myScript.onload = function () {
     console.log('addParentIdToElements loaded');
   };
-  myScript.src = 'https://cdn.rawgit.com/cirept/RobotSteve/addParentIdToElements/addParentIdToElements.js';
+  myScript.src = 'https://rawgit.com/cirept/RobotSteve/addParentIdToElements/addParentIdToElement/addParentIdToElements.js';
   myScript.id = 'addParentIdToElements';
   d.getElementsByTagName('head')[0].appendChild(myScript);
 })(document);
