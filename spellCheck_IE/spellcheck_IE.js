@@ -147,6 +147,8 @@ function runSpellCheck() {
       addFlag();
 
       let matches = document.body.innerHTML.match(/(~~@\w+)@~~/g);
+
+      console.log(matches);
     });
   });
 }
