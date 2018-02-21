@@ -17,3 +17,10 @@ for (let z = 0; z < domElements.length; z += 1) {
   domElements[z].dataset.parentId = domElements[z].closest('section')
     .id;
 }
+// create DOM element to webpage to visually show custom script has run
+let myDiv = document.createElement('div');
+myDiv.id = 'addParentIdToElementMarker';
+myDiv.innerHTML = `Parent ID's Added`;
+// add custom DOM element
+jQuery(document.body)
+  .before(myDiv);
