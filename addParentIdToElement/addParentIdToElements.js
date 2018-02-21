@@ -1,10 +1,14 @@
 /****************************************
-Author : Eric Tanaka
+Author
+Eric Tanaka
 ----------------------------------------
-Description : Adds the SECTION ID to all child image and link elements.
+Description
+Adds the SECTION ID to all child image and link elements.
 This will allow easier finding of elements when in Website Manager
 ----------------------------------------
-Update Log : Updated code with more comments - Eric Tanaka - 2-15-2018
+Update Log
+- Updated code with more comments - Eric Tanaka - 2-15-2018
+- Added code to add custom div to webpage - Eric Tanaka - 2/20/2018
 ****************************************/
 
 // get the 'main' section of the webpage
