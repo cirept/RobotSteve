@@ -25,6 +25,9 @@ for (let z = 0; z < domElements.length; z += 1) {
 let myDiv = document.createElement('div');
 myDiv.id = 'addParentIdToElementMarker';
 myDiv.innerHTML = `Parent ID's Added`;
+myDiv.style.padding = '10px';
+myDiv.style.textAlign = 'center';
+myDiv.style.fontSize = '16px';
 // add custom DOM element
 jQuery(document.body)
   .before(myDiv);
