@@ -24,7 +24,7 @@ for (let z = 0; z < domElements.length; z += 1) {
 // create DOM element to webpage to visually show custom script has run
 let myDiv = document.createElement('div');
 myDiv.id = 'addParentIdToElementMarker';
-myDiv.innerHTML = `Parent ID's Added`;
+myDiv.innerHTML = 'Parent IDs Added';
 myDiv.style.padding = '10px';
 myDiv.style.textAlign = 'center';
 myDiv.style.fontSize = '16px';
