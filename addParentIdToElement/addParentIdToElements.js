@@ -31,3 +31,11 @@ myDiv.style.fontSize = '16px';
 // add custom DOM element
 jQuery(document.body)
   .before(myDiv);
+// get the page height
+let docHeight = jQuery(document)
+  .height();
+// scroll to the bottom of the page
+jQuery('html, body')
+  .animate({
+    "scrollTop": docHeight
+  });
