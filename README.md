@@ -1,1 +1,6 @@
+<script src='https://www.scribens.com/scribens-integration.js'></script>
+
+<button>Click me to spell check</button>
+<textarea></textarea>
+
 RobotSteve
